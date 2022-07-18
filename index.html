@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PA-Drawing Board</title>
+  </head>
+  <body>
+    <h1 id="headline">PIXELART DRAWINGBOARD</h1>
+    <ul class="settings">
+      <li class="tile_config">
+        <label for="size">Pixel</label>
+        <input type="number" name="size" id="tile_size" value="30" />
+      </li>
+      <li class="color_config">
+        <input type="color" name="color" id="tile_color" />
+      </li>
+      <li>
+        <button id="reset_button" type="reset">Reset</button>
+        <label for="gridToggle" style="color: white">Grid</label>
+        <input type="checkbox" name="gridToggle" id="grid_toggle" checked />
+      </li>
+    </ul>
+    <div id="pixel_container" class="display_grid"></div>
+  </body>
+  <script src="./main.js"></script>
+</html>
